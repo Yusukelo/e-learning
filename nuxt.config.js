@@ -35,7 +35,8 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/pwa'
   ],
 
   axios: {
@@ -43,5 +44,17 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+  },
+
+  manifest: {
+    name: 'e-learning',
+    lang: 'ja',
+    short_name: 'demo',
+    title: 'demo',
+    'og:title': 'demo',
+    description: 'demoサイトです',
+    'og:description': 'demoサイトです',
+    theme_color: '#212121',
+    background_color: '#212121'
   }
 }
